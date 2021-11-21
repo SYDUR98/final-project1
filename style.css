@@ -1,3 +1,7 @@
+
+*{
+    box-sizing: border-box;
+}
 /* Upper content start*/
 .main-up-all{
     background-color:rgba(255, 165, 2, 0.5); 
@@ -83,6 +87,7 @@
 /* Upper content end*/
 /* Upper one down content start*/
 .one_down{
+    position: relative;
     background-color:white; 
     height: 702px;
     width: 1440px;
@@ -90,10 +95,13 @@
 
 
 .one_downflex{
+    position:absolute;
     display: flex;
 }
 img.one_down_imgone{
-    margin-top: -25px;
+    margin-top: 20px;
+    width: 200px;
+    height: 130px;
 }
 .one_down_middle{
     margin-top: 260px;
@@ -402,3 +410,96 @@ img.one_down_imgone{
     margin-top: 52px;
     margin-right: 42px;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .up_left{
+        width:100%;
+        display:inline-block;
+        color:#2ED573
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /* Upper content start*/
+    .main-up{
+        flex-direction: column;
+    }
+    .main-up-all{
+        background-color: #2ED573;
+        height: 920px;
+    
+    }
+    .up_left{
+        color:red;
+        margin-left: 450px;
+    }
+    .up_center{
+        margin-left:220px;
+        padding:px;
+        flex-direction: column;
+        font-size: 30px;
+        margin-right: 718px;
+        
+    }
+    .up_center>div{
+        background-color: #4F55DD;
+        color:#E5E5E5;
+        margin-right: 50px;
+        align-items:center;
+        border: 1px solid rebeccapurple;
+        border-radius: 30px;
+        padding:10px;
+        margin: 10px;
+
+    }
+    .up_center>div:hover{
+        color:royalblue;
+        background-color: wheat;
+    }
+    .up_right{
+        margin-left: 350px;
+        font-size: 30px;
+    }
+    .sign_up{
+        margin-left: 60px;
+        background-color: tomato;
+        width: 138px;
+        height: 61px;
+    }
+    .images-up{
+        display: none;
+    }
+    .footer_right{
+        margin-left: 0px;
+    }
+    .footer_right{
+        position:relative;
+        margin-left: 166px;
+        margin-top: 0px;
+    }
+    .footer_right>h2{
+        position:absolute;
+        margin-top: 60px;
+        color:rgb(5, 4, 1);
+        background-color:rgb(247, 25, 25);
+        border: 1px solid rgb(72, 7, 252);
+        font-size: 30px;
+        width: 177px;
+        height: 51px;
+        padding:5px 10px;
+    }
+    /* Upper content end*/
+    /* Upper one down content start*/
+
+    /* Upper one down content end*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
